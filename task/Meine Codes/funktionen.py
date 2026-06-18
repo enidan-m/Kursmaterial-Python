@@ -117,4 +117,45 @@
 # Operation: - -> 10 - 5 = 5
 # Operation: * -> 10 * 5 = 50
 
-   
+#def addieren(a, b):
+   # return a + b
+
+#def sub(a, b):
+    #return a - b 
+
+#def multi(a, b):
+    #return a * b
+
+#number_1 = float(input("Zahl 1\n"))
+#number_2 = float(input("Zahl 2\n"))
+#operator = input("operator (+, -, *)\n")
+
+#if operator == "+":
+    #result = addieren(number_1, number_2)
+
+#elif operator == "-":
+    #result = sub(number_1, number_2)
+
+#elif operator == "*":
+    #result = multi(number_1, number_2)
+    
+#print(result)
+
+
+# AUFGABE 6: STANDARDWERTE (EINFACH)
+#
+# Schreibe eine Funktion mit Standardwerten für Parameter.
+#
+# 0. Definiere die Funktion: def begruessung(name, anrede="Hallo"):
+# 1. Die Funktion gibt "[anrede] [name]!" aus
+# 2. Rufe die Funktion auf:
+#    2.a Mit nur einem Parameter (name) -> Standardwert "Hallo" wird verwendet
+#    2.b Mit zwei Parametern (name, anrede) -> Eigener Wert wird verwendet
+#
+# BEISPIEL:
+# begruessung("Anna") -> Hallo Anna!
+# begruessung("Ben", "Guten Morgen") -> Guten Morgen Ben!
+
+def begruessung(name, anrede="Hallo"):
+    print(f"{anrede} {name}\n")
+begruessung("Max","Hi")
