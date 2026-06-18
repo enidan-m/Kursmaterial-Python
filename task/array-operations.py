@@ -6,4 +6,13 @@
  #2. Nach dem Eingeben wird der Liste der eingegebene user hinzugefügt
  #Optional: Falls die Liste 10 Einträge groß ist (die Länge bekommt mit len()) wird das Programm beendet und die Liste mit den bestehenden usern ausgegeben
  
- 
+usernames = []
+
+while True:
+    user_entry = input("Gebe einen username ein.\n")
+    if user_entry.lower() == "quit":
+        break
+    if len(usernames) > 10: 
+        break
+    usernames.append(user_entry)
+print(f"The usernames are:\n{usernames}")
