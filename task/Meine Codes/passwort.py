@@ -45,11 +45,11 @@ while True:
     user_choice = input("Wähle die entsprechende Option aus [1|2|3|4|5|6]\n")
 
     if user_choice == "1":
-        new_user = input("Geben einen Benutzernamen ein\n")
-        break
+        new_user = input("Geben einen Benutzernamen ein\n").capitalize()
+        datenbank.append(new_user)
 
     elif user_choice == "2":
-        print("Hier sind alle Benutzer")
+        print(f"Hier sind alle Benutzer:\n{datenbank}")
         break
 
     elif user_choice == "3":
@@ -72,8 +72,7 @@ while True:
         
         
         
-        # if  ".mp3" not in song:
-        #     print("The song needs to contain the following [Artist - song.mp3]")
+      
 #
 
 #
