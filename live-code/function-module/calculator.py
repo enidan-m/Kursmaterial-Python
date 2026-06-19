@@ -1,21 +1,20 @@
+
+        # for item in operands: 
+        #     result = result + item
+
+from utils.mathUtils import add,subtract,multiply,division
+
 def calculator(operands,operator="+"):
     result  = 0
     if operator == "+":
-        for item in operands: 
-            result = result + item #result += item
+        result = add(operands) #result += item
     elif operator == "-":
-        result = operands[0]
-        for item in operands: 
-            result = result - item #result -= item
+        result = subtract(operands) #result -= item
         #return result
     elif operator == "*":
-        result = 1
-        for item in operands: 
-            result = result * item 
+        result = multiply(operands)
     elif operator == "/":
-        result = operands[0]
-        for item in operands: 
-            result = result / item #result += item
+        result = division(operands) #result += item
     else:
         print("Operator entry is not valid!")
     
