@@ -185,6 +185,8 @@
 
 # print("Durchschnitt:", ergebnis)
 
+
+
 # AUFGABE 8: MEHRERE RÜCKGABEWERTE (MITTEL)
 #
 # Schreibe eine Funktion, die mehrere Werte zurückgibt.
@@ -200,3 +202,82 @@
 # BEISPIEL:
 # Liste: [5, 2, 8, 1, 9] -> Minimum: 1, Maximum: 9
 # Liste: [3.5, 2.1, 7.8, 4.2] -> Minimum: 2.1, Maximum: 7.8
+
+# def min_max(zahlen_liste):
+#     return min(zahlen_liste), max(zahlen_liste)
+
+# zahlen = [4, 5, 6, 7, 8]
+
+# ergbnis = min_max(zahlen)
+
+# print(ergbnis)
+
+
+
+
+# AUFGABE 9: FUNKTION MIT SCHLEIFE (MITTEL)
+#
+# Schreibe eine Funktion, die eine Liste von Namen bekommt
+# und jeden Namen mit einer Begrüßung ausgibt.
+#
+# 0. Definiere die Funktion: def begruesse_alle(namen_liste):
+# 1. Die Funktion geht mit einer for-Schleife durch die Liste
+# 2. Für jeden Namen wird "Hallo [name]!" ausgegeben
+# 3. Erstelle eine Liste mit 5 Namen (OHNE Benutzereingabe)
+# 4. Rufe die Funktion mit der Liste auf
+#
+# BEISPIEL:
+# Liste: ["Anna", "Ben", "Clara", "David", "Emma"]
+# Ausgabe:
+# Hallo Anna!
+# Hallo Ben!
+# Hallo Clara!
+# Hallo David!
+# Hallo Emma!
+
+# def begruesse_alle(namen_liste):
+#     for name in namen_liste:
+#         print("Hallo", name + "!")
+
+# person = ["Anna", "Ben", "Clara", "David", "Emma"]
+
+# begruesse_alle(person)
+
+
+# AUFGABE 10: FUNKTIONEN ZUSAMMENSETZEN (SCHWER)
+#
+# Schreibe mehrere kleine Funktionen, die zusammen ein Programm ergeben.
+#
+# 0. Definiere die Funktionen:
+#    0.a def eingabe_zahl(prompt): gibt input als float zurück
+#    0.b def berechne_flaeche(breite, hoehe): gibt breite * hoehe zurück
+#    0.c def ausgabe(flaeche): gibt "Die Fläche ist: [flaeche]" aus
+# 1. Rufe die Funktionen in der richtigen Reihenfolge auf:
+#    1.a Breite mit eingabe_zahl() einlesen
+#    1.b Höhe mit eingabe_zahl() einlesen
+#    1.c Fläche mit berechne_flaeche() berechnen
+#    1.d Ergebnis mit ausgabe() anzeigen
+#
+# BEISPIEL:
+# Breite: 5
+# Höhe: 3
+# Die Fläche ist: 15.0
+
+
+def eingabe_zahl(prompt):
+    return float(input(prompt))
+
+def berechne_flaeche(breite, hoehe):
+    return breite * hoehe
+
+def ausgabe(flaeche):
+    print(f"Die Fläche ist: {flaeche}")
+
+breite = eingabe_zahl("Breite eingeben: ")
+
+hoehe = eingabe_zahl("Höhe eingeben: ")
+
+flaeche = berechne_flaeche(breite, hoehe)
+
+ausgabe(flaeche)
+
