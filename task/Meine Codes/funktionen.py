@@ -185,3 +185,18 @@
 
 # print("Durchschnitt:", ergebnis)
 
+# AUFGABE 8: MEHRERE RÜCKGABEWERTE (MITTEL)
+#
+# Schreibe eine Funktion, die mehrere Werte zurückgibt.
+#
+# 0. Definiere die Funktion: def min_max(zahlen_liste):
+# 1. Die Funktion berechnet das Minimum und Maximum der Liste
+#    TIPP: min() und max() Funktionen verwenden
+# 2. Die Funktion gibt beide Werte zurück (TIPP: return min_wert, max_wert)
+# 3. Erstelle eine Liste mit beliebigen Zahlen
+# 4. Rufe die Funktion auf und speichere beide Rückgabewerte
+# 5. Gib Minimum und Maximum aus
+#
+# BEISPIEL:
+# Liste: [5, 2, 8, 1, 9] -> Minimum: 1, Maximum: 9
+# Liste: [3.5, 2.1, 7.8, 4.2] -> Minimum: 2.1, Maximum: 7.8
