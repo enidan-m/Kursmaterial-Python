@@ -156,6 +156,32 @@
 # begruessung("Anna") -> Hallo Anna!
 # begruessung("Ben", "Guten Morgen") -> Guten Morgen Ben!
 
-def begruessung(name, anrede="Hallo"):
-    print(f"{anrede} {name}\n")
-begruessung("Max","Hi")
+# def begruessung(name, anrede="Hallo"):
+#     print(f"{anrede} {name}\n")
+# begruessung("Max","Hi")
+
+# AUFGABE 7: LISTE DURCHGEHEN (MITTEL)
+#
+# Schreibe eine Funktion, die eine Liste von Zahlen als Parameter nimmt
+# und den Durchschnitt berechnet.
+#
+# 0. Definiere die Funktion: def durchschnitt(zahlen_liste):
+# 1. Die Funktion berechnet den Durchschnitt mit sum() und len()
+# 2. Die Funktion gibt den Durchschnitt zurück
+# 3. Erstelle eine Liste mit 5 Zahlen (OHNE Benutzereingabe)
+# 4. Rufe die Funktion mit der Liste auf
+# 5. Gib den Durchschnitt aus
+#
+# BEISPIEL:
+# Liste: [4, 5, 6, 7, 8] -> Durchschnitt: 6.0
+# Liste: [10, 20, 30, 40, 50] -> Durchschnitt: 30.0
+
+# def durchschnitt(zahlen_liste):
+#     return sum(zahlen_liste) / len(zahlen_liste)
+
+# zahlen = [4, 5, 6, 7, 8]
+
+# ergebnis = durchschnitt(zahlen)
+
+# print("Durchschnitt:", ergebnis)
+
